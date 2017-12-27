@@ -25,7 +25,7 @@ public class Modelo {
         boolean valor=false;
         String q = "SELECT id FROM cachosduoc.usuarios WHERE usuario = '"+nombre+"';";
         int idusuario = 0;
-        int idcorreo = 999;
+        int idcorreo = -1;
         try {
             PreparedStatement pstm = laconexion.getConexion().prepareStatement(q);
             ResultSet resultadou = pstm.executeQuery();
