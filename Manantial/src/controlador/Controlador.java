@@ -5,6 +5,7 @@
  */
 package controlador;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -75,6 +76,8 @@ public class Controlador implements ActionListener,MouseListener {
                 if (modelo.getLogin(usuario,correo)) {
                     // si loguea
                      interfazVenta.setVisible(true);
+                     interfaz.loginmsg.setForeground(Color.BLUE);
+                     interfaz.loginmsg.setText("Bienvenido");
                 } else {
                     //si no loguea
                    interfaz.loginmsg.setText("El usuario y el correo no coinciden");
