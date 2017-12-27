@@ -5,6 +5,9 @@
  */
 package manantial;
 
+import controlador.Controlador;
+import modelo.SQL;
+
 /**
  *
  * @author Duoc UC
@@ -15,7 +18,8 @@ public class Manantial {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+          new Controlador().iniciar() ;
+        
     }
     
 }
